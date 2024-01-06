@@ -1,0 +1,40 @@
+{% include "momos/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'momos/css/contact.css' %}">
+<div class="contact-form">
+  <h2>Contact<font color="#ff0000"> Us</font></h2>
+  <p>If you have any queries, sen us a message. Our friendly team would love to hear from you</p>
+  <form action="{% url 'contact' %}" method="POST">
+    {% csrf_token %}
+    <label for="firstname" style="width: 76px;">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname" style="width: 76px;">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="reason">What can we do for you?</label>
+    <select id="reason" name="reason">
+      <option value="question">Ask a Question</option>
+      <option value="feedback">Provide Feedback</option>
+      <option value="support">Request Support</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" maxlength="10">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+{% endblock content %}
+
+{% include "momos/footer.html" %}

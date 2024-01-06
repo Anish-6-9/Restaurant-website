@@ -1,0 +1,35 @@
+footer{
+    width: 100%;
+    position: justify;
+    bottom: 0;
+    background-color: white;
+    padding: 100px 0 30px;
+}
+.row{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col1{
+    flex-basis: 40%;
+}
+.col{
+    flex-basis: 15%;
+}
+.logo{
+    width: 200px;
+}
+.col h3{
+    width: fit-content;
+    position: relative;
+}
+p a{
+    text-decoration: none;
+    color: rgb(110, 108, 108);
+}
+.copy{
+    text-align: center;
+}

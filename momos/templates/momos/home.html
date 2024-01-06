@@ -1,0 +1,24 @@
+{% include 'momos/base.html' %}
+
+{% load static %}
+
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'momos/css/home.css' %}">
+<div>
+    <img src='{% static "momos/image/set.png"%}' style="padding-left:200px; padding-top:90px;padding-bottom: 20px; width: 365px; height: 200px;">
+    <img src="{% static 'momos/image/momoset.png' %}"" style="position: absolute; padding-left: 70px;">
+</div>
+<a class='explore' href="#">Explore Food Menu--></a>
+<div class="container">
+    <div class="square"></div>
+    <img src="{% static 'momos/image/man.png' %}" class="image">
+</div>
+<h3>Why Customer Love Us</h3>
+<p>{% lorem 1 %}</p>
+<a class='explore' href="#">Explore US--></a>
+{% endblock content %}
+
+{% include 'momos/footer.html' %}

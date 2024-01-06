@@ -1,0 +1,41 @@
+.navbar1 ul{
+    list-style: none;
+    background-color: #FFFFFF;
+    margin: 8px;
+    padding: 8px;
+    box-shadow: 0px 1px 1px 0px #00000026;
+    overflow: hidden;
+    position: relative;
+}
+.navbar1 li{
+    margin: 8px;
+    font-size: 22px;
+}
+.navbar1 a{
+    color: rgb(110, 108, 108);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+}
+.navbar1 a:hover{
+    background-color: rgb(206, 141, 141);
+}
+.navbar1 li{
+    float: left;
+}
+.navbar1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+.nav-part li{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.navbar1 button{
+    height: 35px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgba(255, 98, 0, 0.842);
+}

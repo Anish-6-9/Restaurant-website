@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  {% block title %}
+  <title>Everest Momo</title>
+  {% endblock title %}
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="{% static 'momos/css/footer.css' %}">
+</head>
+<body>
+  {% block content %}
+  {% endblock content %}
+  <footer>
+    <div class="row">
+        <div class="col1">
+            <img src="{% static 'momos/image/momo.png' %}" class="logo">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+        <div class="col">
+          <h3>Momos</h3>
+            <p><a href="about.html">About Us</a></p>
+            <p><a href="menu.html">Our Menu</a></p>
+            <p><a href="services.html">Our Services</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="col">
+          <h3>Legals</h3>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Support</a></p>
+        </div>
+        <div class="col">
+          <h3>Follow us</h3>
+            <p style="display: inline;"><a href=""><img src="{% static 'momos/image/fb.png' %}" alt="facebook"></a></p>
+            <p style="display: inline;"><a href=""><img src="{% static 'momos/image/tiktok.png' %}" alt="tiktok"></a></p>
+            <p style="display: inline;"><a href=""><img src="{% static 'momos/image/insta.png' %}" alt="insta"></a></p>
+        </div>
+    </div>
+    <hr style="width: 75%;">
+    <p class="copy">&copy; 2024 Your Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

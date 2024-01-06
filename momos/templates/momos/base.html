@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  {% block title %}
+  <title>Everest Momo</title>
+  {% endblock title %}
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="{% static 'momos/css/nav.css' %}">
+</head>
+<body>
+  <div>
+    <nav class="navbar1">
+      <ul>
+        <div class="nav-part">
+          <li><img src="{% static 'momos/image/momo.png' %}" alt="logo" style="width: 125px; height:33px; border-radius: 100px;"></li>
+        </div>
+        <div class="nav-part">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="advices.html">Allergy Advice</a></li>
+        </div>
+        <div class="nav-part">
+          <li><a href=""><img src="{% static 'momos/image/fb.png' %}" alt="facebook"></a></li>
+          <li><a href=""><img src="{% static 'momos/image/tiktok.png' %}" alt="tiktok"></a></li>
+          <li><a href=""><img src="{% static 'momos/image/insta.png' %}" alt="insta"></a></li>
+          <li><button style="background-color: rgba(255, 98, 0, 0.842);"><a href="{% url 'contact' %}">Contact Us</a></button></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  {% block content %}
+  {% endblock content %}
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+.explore{
+    margin-left: 200px;
+    border-radius: 100px;
+    background-color: teal;
+    padding: 10px;
+    padding-left: 2px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+.explore:hover{
+    background-color: rgb(3, 53, 53);
+    color: aliceblue;
+}
+.momoset{
+    position: relative;
+    top: 0px;
+    left: px;
+}
+.container{
+    position: relative;
+    width: 752px; /* Adjust the width based on your layout */
+    height: 1000px;
+}
+.square{
+    height: 500px;
+    width: 500px;
+    background-color: teal;
+    position: absolute;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    left: 145px;
+    top:500px;
+    z-index: 1;
+}
+.image{
+    float: left;
+    padding-left: 200px;
+    padding-top: 400px;
+    position: relative; /* Ensure proper stacking context */
+    z-index: 2;
+}
