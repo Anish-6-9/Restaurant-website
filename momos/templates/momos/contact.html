@@ -9,11 +9,13 @@
   <p>If you have any queries, sen us a message. Our friendly team would love to hear from you</p>
   <form action="{% url 'contact' %}" method="POST">
     {% csrf_token %}
-    <label for="firstname" style="width: 76px;">First Name:</label>
-    <input type="text" id="firstname" name="firstname" required>
+    <div>
+      <label for="firstname">First Name:</label>
+      <label for="lastname" style="padding-left:150px;">Last Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
 
-    <label for="lastname" style="width: 76px;">Last Name:</label>
-    <input type="text" id="lastname" name="lastname" required>
+      <input type="text" id="lastname" name="lastname" required>
+    </div>
 
     <label for="reason">What can we do for you?</label>
     <select id="reason" name="reason">

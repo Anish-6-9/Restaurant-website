@@ -4,6 +4,7 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
+    margin-left: 752px;
 }
 
 .contact-form label {
@@ -34,4 +35,31 @@
 
 .contact-form button:hover {
     background-color: #45a049;
+}
+
+.form-margin{
+    margin-left:80px;
+    padding:5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textarea{
+    padding-right: 100px;
+}
+
+.submit{
+    border-radius: 50px;
+    background-color: teal;
+    color: aliceblue;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px;
+}
+.submit:hover{
+    background-color: rgb(2, 68, 68);
+
+}
+
+.display{
+    display: flex;
 }
